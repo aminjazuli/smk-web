@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Negeri 1 - Program & Kegiatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Sekolah" class="logo-img">
+                <h2>SMK Shalatiyah Bitin</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil Sekolah</a></li>
+                <li><a href="program.html" class="active">Program & Kegiatan</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Program & Kegiatan</h1>
+        <p>Program Unggulan dan Galeri Kegiatan Sekolah</p>
+    </section>
+
+    <!-- Program Unggulan -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Program Unggulan</h2>
+            <div class="program-grid">
+                <!-- Program 1 -->
+                <div class="program-card" onclick="toggleProgram('program1')">
+                    <div class="program-icon">📕</div>
+                    <h3>INFORΜΑΤΙΚΑ BOOSTER</h3>
+                    <p></p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="program-card" onclick="toggleProgram('program2')">
+                    <div class="program-icon">🌐</div>
+                    <h3>ENGLISH BOOSTER</h3>
+                    <p>Menguasai bahasa asing dengan native speaker</p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="program-card" onclick="toggleProgram('program3')">
+                    <div class="program-icon">🎤</div>
+                    <h3>KOREAN BOOSTER</h3>
+                    <p></p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="program-card" onclick="toggleProgram('program4')">
+                    <div class="program-icon">💻</div>
+                    <h3>CODING BOOSTER</h3>
+                    <p></p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+
+                <!-- Program 5 -->
+                <div class="program-card" onclick="toggleProgram('program5')">
+                    <div class="program-icon">📚</div>
+                    <h3>UTBK BOOSTER</h3>
+                    <p></p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+
+                <!-- Program 6 -->
+                <div class="program-card" onclick="toggleProgram('program6')">
+                    <div class="program-icon">👨‍🔧</div>
+                    <h3>JOB BOOSTER</h3>
+                    <p></p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Program 1 -->
+    <div id="modal-program1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program1')">&times;</span>
+            <h3>📕 INFORΜΑΤΙΚΑ BOOSTER</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Informatika dan Kemampuan Umum merupakan bidang yang mencakup pemahaman dasar tentang dunia digital,
+                    termasuk Berpikir Komputasional untuk memecahkan masalah secara logis, Teknologi Informasi dan
+                    Komunikasi yang membahas penggunaan teknologi dalam mengelola informasi, Sistem Komputer yang
+                    mempelajari komponen serta cara kerja komputer, dan Analisis Data yang berfokus pada pengolahan
+                    serta penafsiran data guna mendukung pengambilan keputusan yang tepat.</p>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Program 2 -->
+    <div id="modal-program2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program2')">&times;</span>
+            <h3>🌐 Kelas Bahasa Internasional</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Basic English Fundamentals membahas dasar-dasar bahasa Inggris yang menjadi pondasi untuk memahami
+                    dan menggunakan bahasa secara benar. Materi ini dilanjutkan dengan Professional English, yang
+                    berfokus pada penggunaan bahasa Inggris dalam konteks profesional atau dunia kerja. Selain itu,
+                    terdapat Fundamentals of English Used in CV and Job Interview, yang membantu siswa mempelajari cara
+                    menggunakan bahasa Inggris secara tepat dalam pembuatan CV serta saat wawancara kerja. Setiap topik
+                    juga dilengkapi dengan Grammar Exercises Following the Topic of Each Unit for Grade 12–7, yaitu
+                    latihan tata bahasa yang disesuaikan dengan topik di setiap unit agar siswa dapat memperkuat
+                    pemahaman dan penerapan bahasa Inggris secara praktis dan efektif.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Program 3 -->
+    <div id="modal-program3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program3')">&times;</span>
+            <h3>🎤 KOREAN BOOSTER</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Korean Booster merupakan program pembelajaran bahasa Korea yang membantu siswa memahami dasar-dasar
+                    penulisan dan pelafalan dalam bahasa Korea. Pembelajaran dimulai dari Hangeul Class, yaitu
+                    pengenalan terhadap huruf-huruf Korea. Kemudian dilanjutkan dengan materi Vokal Dasar dan Konsonan
+                    Dasar untuk memahami bunyi dan bentuk huruf utama dalam Hangeul. Setelah itu, siswa mempelajari
+                    Vokal Ganda dan Konsonan Ganda yang merupakan kombinasi huruf dengan pelafalan khusus. Terakhir,
+                    terdapat Konsonan Akhir (Batchim) yang menjelaskan aturan penggunaan huruf konsonan di akhir suku
+                    kata. Melalui materi-materi ini, siswa dapat membaca, menulis, dan mengucapkan kata-kata dalam
+                    bahasa Korea dengan benar.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Program 4 -->
+    <div id="modal-program4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program4')">&times;</span>
+            <h3>💻 CODING BOOSTER</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Coding Booster merupakan program pembelajaran yang bertujuan untuk memperkaya keterampilan siswa
+                    dalam menghadapi perkembangan era digital. Program ini mencakup berbagai bidang penting dalam dunia
+                    teknologi, seperti UI/UX Design and Development yang berfokus pada perancangan tampilan dan
+                    pengalaman pengguna, Mobile Application Development yang mengajarkan pembuatan aplikasi untuk
+                    perangkat mobile, serta 3D Game Animation SMK yang melatih siswa membuat animasi dan game
+                    interaktif. Selain itu, terdapat pembelajaran Scratch, platform pemrograman visual yang mudah
+                    digunakan untuk memahami logika coding dasar, dan Roblox, yang digunakan untuk melatih kreativitas
+                    dalam membuat serta mengembangkan game interaktif. Melalui Coding Booster, siswa diharapkan mampu
+                    beradaptasi dan berinovasi di dunia digital secara kreatif dan kompetitif.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Program 5 -->
+    <div id="modal-program5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program5')">&times;</span>
+            <h3>📚 UTBK BOOSTER</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>UTBK Booster adalah program pembelajaran yang dirancang untuk mempersiapkan siswa menghadapi Ujian
+                    Tulis Berbasis Komputer (UTBK) dengan lebih optimal. Program ini mencakup berbagai materi utama,
+                    seperti Tes Potensi Skolastik (TPS) yang melatih Kemampuan Penalaran Umum, Kemampuan Kuantitatif,
+                    Pengetahuan dan Pemahaman Umum, serta Kemampuan Memahami dan Menulis. Selain itu, terdapat bagian
+                    Literasi dalam Bahasa yang mencakup Literasi Bahasa Indonesia dan Literasi Bahasa Inggris, untuk
+                    meningkatkan kemampuan membaca, memahami, dan menganalisis teks. Program ini juga meliputi Tes
+                    Penalaran Matematika, yang membantu siswa mengasah logika serta kemampuan berpikir analitis dalam
+                    menyelesaikan soal-soal numerik. Melalui UTBK Booster, siswa diharapkan mampu menghadapi ujian
+                    dengan percaya diri dan memperoleh hasil terbaik.
+                    .</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Program 6 -->
+    <div id="modal-program6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program6')">&times;</span>
+            <h3>👨‍🔧 JOB BOOSTER</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Job Booster adalah program layanan yang dirancang untuk mempersiapkan siswa menghadapi dunia kerja
+                    secara profesional. Program ini mencakup berbagai pelatihan penting seperti Korean Work Ethic, yang
+                    menanamkan etos kerja dan disiplin ala budaya kerja Korea, CV Consulting untuk membantu siswa
+                    menyusun curriculum vitae yang menarik dan efektif, serta Interview Preparation yang melatih
+                    kemampuan menghadapi wawancara kerja dengan percaya diri. Selain itu, terdapat Portfolio Consulting
+                    untuk membimbing siswa dalam menyusun portofolio profesional, Time Management agar mampu mengatur
+                    waktu secara efisien, Public Speaking guna meningkatkan kemampuan berbicara di depan umum, dan
+                    Personal Branding untuk membangun citra diri yang positif dan meyakinkan. Melalui Job Booster, siswa
+                    diharapkan siap bersaing di dunia kerja dengan keterampilan, kepercayaan diri, dan profesionalisme
+                    yang kuat..</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Galeri -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Galeri Kegiatan</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k12.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                        
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k11.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                        
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k10.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k9.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k8.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k7.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k6.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k5.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                       
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k4.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k3.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k2.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img"><img src="keg/k1.jpg" width="400px" height="400px"></div>
+                    <div class="gallery-overlay">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SMK Shalatiyah Bitin</h3>
+                    <p>Sekolah unggulan dengan prestasi tinggi</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil Sekolah</a></li>
+                        <li><a href="program.html">Program & Kegiatan</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>📍 Jalan Keramat No. 173</p>
+                    <p>📞 (0511) 123-4567</p>
+                    <p>✉️ info@sman1.sch.id</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SMK Shalatiyah Bitin. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
